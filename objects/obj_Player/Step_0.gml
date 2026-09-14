@@ -1,5 +1,5 @@
-clamp(x, 0, 1334) //max screen width
-clamp(y, 0, 1334) // max screen height
+x=clamp(x, 16, 1684) //max screen width
+y=clamp(y, 16, 1384) // max screen height
 if (keyboard_check(vk_left))
 {
     x = x - 5;

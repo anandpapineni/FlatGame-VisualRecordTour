@@ -1,14 +1,18 @@
 if(place_meeting(x, y, obj_Player))
 {
-	if(myTextbox == noone)
-		myTextbox = instance_create_layer(x,y, "AlbumTextLayer", obj_AlbumDesc);
-		myTextbox.AlbumDescReview = "Chance The Rapper's 'Coloring Book'";
+	if(myDesc == noone)
+		myDesc = instance_create_layer(x,y, "AlbumTextLayer", obj_AlbumDetails);
+		myDesc.AlbumDescReview = "Chance The Rapper's 'Coloring Book'";
+		myReview = instance_create_depth(-700, -400, -1000, obj_AlbumReview);
+		myReview.AlbumDescReview = "I love my wife."
 }
 else
 {
-		if(myTextbox != noone)
+		if(myDesc != noone)
 		{
-			instance_destroy(myTextbox);
-			myTextbox = noone;
+			instance_destroy(myDesc);
+			instance_destroy(obj_AlbumReview);
+			myDesc = noone;
+			myReview = noone;
 		}
 }

@@ -1,1 +1,2 @@
-myTextbox = noone;
+myDesc = noone;
+myReview = noone;
