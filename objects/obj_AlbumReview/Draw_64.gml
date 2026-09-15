@@ -1,20 +1,14 @@
-// 1. Get the current dimensions of the GUI layer
-var gui_w = display_get_gui_width();
-var gui_h = display_get_gui_height();
+// Panel geometry now lives on the instance (see Create) so other objects
+// can line up against it. Recompute each frame to survive a resize.
+update_geometry();
 
-// 2. Define the dimensions of the text box
-var box_margin = 20;               // Distance from the screen edges
-var box_height = 120;              // How tall the text box is
-var padding = 15;                  // Distance from the text to the box border
-
-// 3. Calculate box corners
-var x1 = box_margin;
-var y1 = gui_h - box_height - box_margin;
-var x2 = gui_w - box_margin;
-var y2 = gui_h - box_margin;
+var x1 = box_x1;
+var y1 = box_y1;
+var x2 = box_x2;
+var y2 = box_y2;
 
 // 4. Draw the background box (Black rectangle with a white border)
-draw_sprite_stretched(spr_AlbumReview, 0, x1, y1, x2 - x1, y2 - y1);  // True means outline
+draw_sprite_stretched(spr_AlbumReview, 0, x1, y1, x2 - x1, y2 - y1);
 
 // 5. Draw the text inside the box
 draw_set_halign(fa_left);
@@ -25,6 +19,6 @@ var max_width = (x2 - x1) - (padding * 2);
 
 
 // Copy from character 1 up to the current floor value of char_current
-var _text_to_draw = string_copy(AlbumDescReview, 1, floor(char_current));
+var _text_to_draw = string_copy(string_hash_to_newline(AlbumDescReview), 1, floor(char_current));
 // draw_text_ext handles auto-wrapping based on the max_width
 draw_text_ext(x1 + padding, y1 + padding, _text_to_draw, -1, max_width);

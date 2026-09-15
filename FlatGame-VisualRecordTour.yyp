@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"2016","folderPath":"folders/Objects/2016.yy","name":"2016","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"2017","folderPath":"folders/Objects/2017.yy","name":"2017","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -46,6 +47,7 @@
   "name":"FlatGame-VisualRecordTour",
   "resources":[
     {"id":{"name":"obj_AlbumDetails","path":"objects/obj_AlbumDetails/obj_AlbumDetails.yy",},},
+    {"id":{"name":"obj_AlbumQR","path":"objects/obj_AlbumQR/obj_AlbumQR.yy",},},
     {"id":{"name":"obj_AlbumReview","path":"objects/obj_AlbumReview/obj_AlbumReview.yy",},},
     {"id":{"name":"obj_Alfredo","path":"objects/obj_Alfredo/obj_Alfredo.yy",},},
     {"id":{"name":"obj_AtrocityExhibition","path":"objects/obj_AtrocityExhibition/obj_AtrocityExhibition.yy",},},
@@ -73,6 +75,7 @@
     {"id":{"name":"obj_MONTERO","path":"objects/obj_MONTERO/obj_MONTERO.yy",},},
     {"id":{"name":"obj_NoHands","path":"objects/obj_NoHands/obj_NoHands.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
+    {"id":{"name":"obj_QRCache","path":"objects/obj_QRCache/obj_QRCache.yy",},},
     {"id":{"name":"obj_RTJ4","path":"objects/obj_RTJ4/obj_RTJ4.yy",},},
     {"id":{"name":"obj_Saturation","path":"objects/obj_Saturation/obj_Saturation.yy",},},
     {"id":{"name":"obj_ScaringTheHoes","path":"objects/obj_ScaringTheHoes/obj_ScaringTheHoes.yy",},},
@@ -82,6 +85,7 @@
     {"id":{"name":"obj_TheForeverStory","path":"objects/obj_TheForeverStory/obj_TheForeverStory.yy",},},
     {"id":{"name":"obj_ZUU","path":"objects/obj_ZUU/obj_ZUU.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"scr_qr","path":"scripts/scr_qr/scr_qr.yy",},},
     {"id":{"name":"spr_AlbumDesc","path":"sprites/spr_AlbumDesc/spr_AlbumDesc.yy",},},
     {"id":{"name":"spr_AlbumReview","path":"sprites/spr_AlbumReview/spr_AlbumReview.yy",},},
     {"id":{"name":"spr_Alfredo","path":"sprites/spr_Alfredo/spr_Alfredo.yy",},},

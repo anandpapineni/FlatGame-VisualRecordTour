@@ -1,0 +1,2 @@
+myDesc = noone;
+myReview = noone;
